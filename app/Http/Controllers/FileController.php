@@ -61,7 +61,7 @@ class FileController extends Controller
         $files = File::all();
         for ($i=0; $i < count($files); $i++) { 
             $file = $files[$i];
-            $file->media = $file->getMedia('file')->first();
+            $file->media = $file->getMedia('file')->all();
         }
 
         return $files;

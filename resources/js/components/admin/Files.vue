@@ -20,7 +20,7 @@
         {{ item.title }}
       </h5>
       <a
-        :href="item.media.original_url"
+        :href="item.media[0].original_url"
         download
         class="
           inline-flex
