@@ -33,6 +33,7 @@
         <input
           type="file"
           name="file"
+          required
           v-on:change="pdfFile"
           class="
             rounded-lg
