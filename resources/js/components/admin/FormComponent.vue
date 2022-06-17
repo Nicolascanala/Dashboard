@@ -10,6 +10,7 @@
           type="text"
           name="title"
           v-model="title"
+          required
           class="
             rounded-lg
             block
