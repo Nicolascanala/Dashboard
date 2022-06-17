@@ -11,7 +11,7 @@ class HomeController extends Controller
         $files = File::all();
         for ($i=0; $i < count($files); $i++) { 
             $file = $files[$i];
-            $file->media = $file->getMedia('file')->first();
+            $file->media = $file->getMedia('file')->all();
         }
 
         return view('pages.home.index', ['files' => $files]);
